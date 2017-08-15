@@ -1,10 +1,12 @@
 # fb-ads-getting-started
-A guide to creating Ads with the Facebook Marketing API using python
+A guide to creating Ads with python and the Facebook Marketing API
 
 ## Create Advert Account
 create account at www.facebook.com/ads/manager
 
 ## Create App
+create a new app at developers.facebook.com
+
 
 ### Allow API access to the App
 
