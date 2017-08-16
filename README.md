@@ -43,7 +43,7 @@ Use pip to install
 ```
 pip install facebookads
 ```
-See github.com/facebook/facebook-python-ads-sdk for more information
+See <a href="github.com/facebook/facebook-python-ads-sdk">github.com/facebook/facebook-python-ads-sdk</a> for more information
 
 ## Resources:
 github.com/facebook/facebook-python-ads-sdk
