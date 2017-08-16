@@ -45,6 +45,13 @@ pip install facebookads
 ```
 See <a href="github.com/facebook/facebook-python-ads-sdk">github.com/facebook/facebook-python-ads-sdk</a> for more information
 
-## Resources:
+## Create Ad
+Use sample code to create a brand awareness ad
+```
+python ad_brand_awareness.py
+```
+
+
+## Resources
 github.com/facebook/facebook-python-ads-sdk
 www.facebookmarketingdevelopers.com
