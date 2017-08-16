@@ -22,7 +22,21 @@ The app and advert account need to linked. Enter Advert account number under app
 ![ScreenShot](images/fb-ad-id.png)
 
 ### Access Token
-Create user access token to the App with access to the ad_mgmt and read priviledges to ads_read
+Create user access token to the App. One way to do this is in the graph API explorer.
+https://developers.facebook.com/tools/explorer
+
+Select correct app
+
+![ScreenShot](images/fb-access-token1.png)
+
+Select 'create user access token'
+
+![ScreenShot](images/fb-access-token3.png)
+
+Make sure permisions are enabled for: 
+ads_management, ads_read, read_insights
+
+![ScreenShot](images/fb-access-token4.png)
 
 ## Resources:
 github.com/facebook/facebook-python-ads-sdk
