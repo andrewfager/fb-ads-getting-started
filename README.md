@@ -27,16 +27,16 @@ https://developers.facebook.com/tools/explorer
 
 Select correct app
 
-![ScreenShot](images/fb-access-token1.png)
+![ScreenShot](images/fb-access-token-1.png)
 
 Select 'create user access token'
 
-![ScreenShot](images/fb-access-token3.png)
+![ScreenShot](images/fb-access-token-3.png)
 
 Make sure permisions are enabled for: 
 ads_management, ads_read, read_insights
 
-![ScreenShot](images/fb-access-token4.png)
+![ScreenShot](images/fb-access-token-4.png)
 
 ## Resources:
 github.com/facebook/facebook-python-ads-sdk
