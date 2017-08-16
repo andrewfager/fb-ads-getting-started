@@ -4,11 +4,10 @@ A step-by-step guide to automatically creating Ads in Python with the Facebook M
 ## Create Advert Account
 create account at www.facebook.com/ads/manager
 
-![Alt text](/relative/path/to/img.jpg?raw=true "Optional Title")
-
 ## Create App
 create a new app at developers.facebook.com
 
+![ScreenShot](images/fb-create-app2.png)
 
 ### Allow API access to the App
 
