@@ -38,6 +38,13 @@ ads_management, ads_read, read_insights
 
 ![ScreenShot](images/fb-access-token-4.png)
 
+## Install Marketing API SDK for Python
+Use pip to install
+```
+pip install facebookads
+```
+See github.com/facebook/facebook-python-ads-sdk for more information
+
 ## Resources:
 github.com/facebook/facebook-python-ads-sdk
 www.facebookmarketingdevelopers.com
