@@ -1,10 +1,19 @@
 # Getting Started with Facebook Marketing API 
 A step-by-step guide to automatically creating Ads in Python with the Facebook Marketing API.
 
-## Create Advert Account
+## Install Marketing API SDK for Python
+Use pip to install
+```
+pip install facebookads
+```
+See <a href="github.com/facebook/facebook-python-ads-sdk">github.com/facebook/facebook-python-ads-sdk</a> for more information
+
+## Account Setup
+
+### Create Advert Account
 create account at www.facebook.com/ads/manager
 
-## Create App
+### Create App
 create a new app at developers.facebook.com
 
 ![ScreenShot](images/fb-create-app2.png)
@@ -38,12 +47,6 @@ ads_management, ads_read, read_insights
 
 ![ScreenShot](images/fb-access-token-4.png)
 
-## Install Marketing API SDK for Python
-Use pip to install
-```
-pip install facebookads
-```
-See <a href="github.com/facebook/facebook-python-ads-sdk">github.com/facebook/facebook-python-ads-sdk</a> for more information
 
 ## Create Ad
 Use sample code to create a brand awareness ad
@@ -51,7 +54,6 @@ Use sample code to create a brand awareness ad
 python ad_brand_awareness.py
 ```
 
-
 ## Resources
-github.com/facebook/facebook-python-ads-sdk
+<a href="github.com/facebook/facebook-python-ads-sdk">github.com/facebook/facebook-python-ads-sdk</a>
 www.facebookmarketingdevelopers.com
