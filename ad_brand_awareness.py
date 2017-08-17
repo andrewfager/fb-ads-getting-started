@@ -1,5 +1,3 @@
-#derived from SAMPLE_CODE1_mod.py
-
 from facebookads import objects
 from facebookads.api import FacebookAdsApi
 from facebookads.adobjects.adaccount import AdAccount
@@ -12,12 +10,32 @@ from facebookads.adobjects.adcreativelinkdata import AdCreativeLinkData
 from facebookads.adobjects.adcreativeobjectstoryspec import AdCreativeObjectStorySpec
 from facebookads.adobjects.adimage import AdImage
 
-access_token = '<ACCESS_TOKEN>'
+### User Input ###
 
-ad_account_id = '10152750485066251'
-page_id = '1897834227096194'
+access_token 	= '<ACCESS_TOKEN>'
+ad_account_id 	= '<AD_ACCOUNT_ID>'
+page_id 	= '<PAGE_ID>'
+
+img_filename 	= '/path/to/image.jpg'
+link_url 	= 'http://www.mylink.com'
+link_message 	= 'try it out'
+
+campaign_name   = 'My Campaign2'
+campaign_status = 'ACTIVE'
+campaign_status = 'PAUSED'
+
+adset_name      = 'My Adset'
+adset_status    = 'ACTIVE'
+adset_status    = 'PAUSED'
+
+ad_name         = 'My Ad'
+ad_status       = 'ACTIVE'
+ad_status       = 'PAUSED'
+
+###################
 
 FacebookAdsApi.init(access_token=access_token)
+my_parent_id = 'act_'+ad_account_id
 
 ### Campaign ###
 
@@ -28,17 +46,17 @@ FacebookAdsApi.init(access_token=access_token)
 #REACH, APP_INSTALLS, CONVERSIONS
 
 params = {
-    'name': 'My Campaign',
+    'name': campaign_name,
     'objective': 'BRAND_AWARENESS',
-    'status': 'PAUSED',
+    'status': campaign_status,
 }
 
-campaign = Campaign(parent_id='act_10152750485066251')
+campaign = Campaign(parent_id=my_parent_id)
 campaign.remote_create(params=params)
 campaign_id = campaign.get_id()
 
-print 'campaign', campaign
-print 'campaign_id:', campaign_id, '\n'
+#print 'campaign', campaign
+#print 'campaign_id:', campaign_id, '\n'
 
 ### Ad Set ###
 
@@ -46,11 +64,11 @@ me = objects.AdUser(fbid='me')
 my_accounts = list(me.get_ad_accounts())
 my_account = my_accounts[0]
 
-print(my_accounts)
-print type(my_accounts[0])
+#print(my_accounts)
+#print type(my_accounts[0])
 
 params = {
-    'name': 'My AdSet',
+    'name': adset_name,
     'optimization_goal': 'BRAND_AWARENESS',
     'billing_event': 'IMPRESSIONS',
     'promoted_object': {'page_id': page_id},
@@ -58,7 +76,7 @@ params = {
     'is_autobid':True,
     'campaign_id': campaign_id,
     'targeting': {'geo_locations':{'countries':['US']}},
-    'status': 'PAUSED',
+    'status': adset_status,
 }
 
 # if manual bid use:
@@ -68,36 +86,26 @@ ad_account = my_account
 ad_set = ad_account.create_ad_set(params=params)
 ad_set_id = ad_set.get_id()
 
-print 'ad_set', ad_set
-print 'ad_set_id:', ad_set_id, '\n'
+#print 'ad_set', ad_set
+#print 'ad_set_id:', ad_set_id, '\n'
 
 ### Ad ###
-params = {
-    'name': 'My Creative',
-    'object_id': page_id,
-    'title': 'My Page Like Ad',
-    'body': 'Like My Page',
-    'image_url': 'http://www.facebookmarketingdevelopers.com/static/images/resource_1.jpg',
-}
-
-#https://developers.facebook.com/docs/marketing-api/buying-api
 
 #Image
 
-image = AdImage(parent_id='act_10152750485066251')
-image[AdImage.Field.filename] = '/Users/carolefager/Desktop/rock1.jpg' #can this be on the internet?
+image = AdImage(parent_id=my_parent_id)
+image[AdImage.Field.filename] = img_filename
 image.remote_create()
 
 # Output image Hash
-print(image[AdImage.Field.hash])
+#print(image[AdImage.Field.hash])
 
 
 #Creative
 
 link_data = AdCreativeLinkData()
-link_data[AdCreativeLinkData.Field.message] = 'try it out'
-link_data[AdCreativeLinkData.Field.link] = 'http://www.exa.com/exa-digitalrock'
-#link_data[AdCreativeLinkData.Field.link] = 'http://www.facebookmarketingdevelopers.com/static/images/resource_1.jpg'
+link_data[AdCreativeLinkData.Field.message] = link_message
+link_data[AdCreativeLinkData.Field.link] = link_url
 link_data[AdCreativeLinkData.Field.image_hash] = image[AdImage.Field.hash]
 
 object_story_spec = AdCreativeObjectStorySpec()
@@ -109,30 +117,28 @@ creative[AdCreative.Field.name] = 'AdCreative for Link Ad'
 creative[AdCreative.Field.object_story_spec] = object_story_spec
 creative.remote_create()
 
-print(creative)
+#print(creative)
 
 creative = AdCreative(parent_id='act_10152750485066251')
 creative[AdCreative.Field.name] = 'AdCreative for Link Ad'
 creative[AdCreative.Field.object_story_spec] = object_story_spec
 creative.remote_create()
 
-print 'creative', creative
+#print 'creative', creative
 
 creative_id = creative.get_id()
-print 'creative_id:', creative_id, '\n'
+#print 'creative_id:', creative_id, '\n'
 
 
 # The Actual Ad
-
-
-ad = Ad(parent_id='act_10152750485066251')
-ad[Ad.Field.name] = 'My Ad'
+ad = Ad(parent_id=my_parent_id)
+ad[Ad.Field.name] = ad_name
 ad[Ad.Field.adset_id] = ad_set_id
 ad[Ad.Field.creative] = {
     'creative_id':creative_id,
 }
 ad.remote_create(params={
-    'status': Ad.Status.paused,
+    'status': ad_status,
 })
 
 
