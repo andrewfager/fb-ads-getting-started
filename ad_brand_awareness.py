@@ -16,10 +16,6 @@ access_token 	= '<ACCESS_TOKEN>'
 ad_account_id 	= '<AD_ACCOUNT_ID>'
 page_id 	= '<PAGE_ID>'
 
-img_filename 	= '/path/to/image.jpg'
-link_url 	= 'http://www.mylink.com'
-link_message 	= 'try it out'
-
 campaign_name   = 'My Campaign2'
 campaign_status = 'ACTIVE'
 campaign_status = 'PAUSED'
@@ -31,6 +27,10 @@ adset_status    = 'PAUSED'
 ad_name         = 'My Ad'
 ad_status       = 'ACTIVE'
 ad_status       = 'PAUSED'
+
+img_filename 	= '/path/to/image.jpg'
+link_url 	= 'http://www.mylink.com'
+link_message 	= 'try it out'
 
 ###################
 
@@ -112,14 +112,14 @@ object_story_spec = AdCreativeObjectStorySpec()
 object_story_spec[AdCreativeObjectStorySpec.Field.page_id] = page_id
 object_story_spec[AdCreativeObjectStorySpec.Field.link_data] = link_data
 
-creative = AdCreative(parent_id='act_10152750485066251')
+creative = AdCreative(parent_id=my_parent_id)
 creative[AdCreative.Field.name] = 'AdCreative for Link Ad'
 creative[AdCreative.Field.object_story_spec] = object_story_spec
 creative.remote_create()
 
 #print(creative)
 
-creative = AdCreative(parent_id='act_10152750485066251')
+creative = AdCreative(parent_id=my_parent_id)
 creative[AdCreative.Field.name] = 'AdCreative for Link Ad'
 creative[AdCreative.Field.object_story_spec] = object_story_spec
 creative.remote_create()
