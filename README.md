@@ -33,7 +33,7 @@ access_token    = '<ACCESS_TOKEN>'
 ad_account_id   = '<AD_ACCOUNT_ID>'
 page_id         = '<PAGE_ID>'
 
-img_filename    = '/path/to/image.jpg'
+img_filename    = '/path/to/local/image.jpg'
 link_url        = 'http://www.mylink.com'
 link_message    = 'try it out'
 
@@ -71,7 +71,7 @@ Once an access token has been create copy and paste to the ```access_token``` va
 
 ### Ad Account ID
 
-You can obtain your Ad Account ID from the Ads manager (https://www.facebook.com/ads/manager/). If not already setup you will need to create an account. Enter ID (as a string) into the the ```ad_account_id``` variable
+You can obtain your Ad Account ID from the Ads manager (https://www.facebook.com/ads/manager/). If not already setup you will need to create an account. Enter ID (as a string) into the the ```ad_account_id``` variable.
 
 ![ScreenShot](images/fb-ad-id3.png)
 
@@ -81,9 +81,9 @@ You will also need to link your app and ad account. Enter Ad account ID under ap
 
 ### Page ID
 
-You will need to reference your FB page to create this ad. You can find your page ID by going to the page's 'About' section.
+You will need to reference your FB page to create this ad. You can find your page ID by going to the page's 'About' section. Enter ID (as a string) into the the ```page_id``` variable. If you do not have a page you can create one here: https://www.facebook.com/pages/create
 
-![ScreenShot](images/fb-page-id.png)
+![ScreenShot](images/fb-page-id2.png)
 
 
 
