@@ -10,11 +10,9 @@ See <a href="github.com/facebook/facebook-python-ads-sdk">github.com/facebook/fa
 
 ## Account Setup
 
-### Create Advert Account
-create account at www.facebook.com/ads/manager
 
 ### Create App
-create a new app at developers.facebook.com
+create a new app at https://developers.facebook.com
 
 ![ScreenShot](images/fb-create-app2.png)
 
@@ -25,8 +23,7 @@ settings > advanced
 
 ![ScreenShot](images/fb-api-access.png)
 
-
-## Create Ad
+## Setup
 Use sample code to create a brand awareness ad. First fill our 'User Input' section at begining of ``ad_awareness.py``
 
 ```
@@ -74,11 +71,19 @@ Once an access token has been create copy and paste to the ```access_token``` va
 
 ### Ad Account ID
 
-Obtain the Ad Account ID from....
+You can obtain your Ad Account ID from the Ads manager (https://www.facebook.com/ads/manager/). If not already setup you will need to create an account. Enter ID (as a string) into the the ```ad_account_id``` variable
 
-You will also need to link the ad account to your app. Enter Ad account number under app's advanced settings.
-![ScreenShot](images/fb-ad-id.png)
+![ScreenShot](images/fb-ad-id3.png)
 
+
+You will also need to link your app and ad account. Enter Ad account ID under app's advanced settings.
+![ScreenShot](images/fb-ad-id2.png)
+
+### Page ID
+
+You will need to reference your FB page to create this ad. You can find your page ID by going to the page's 'About' section.
+
+![ScreenShot](images/fb-page-id.png)
 
 
 
