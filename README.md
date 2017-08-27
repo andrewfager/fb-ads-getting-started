@@ -99,7 +99,7 @@ Active status is specified using the ```campaign_status```/```adset_status```/``
 
 ## Create Ad
 
-Run and brand awareness ad:
+Create brand awareness ad using Marketing API:
 
 ```
 python ad_brand_awareness.py
