@@ -86,6 +86,11 @@ You will need to reference your FB page to create this ad. You can find your pag
 ![ScreenShot](images/fb-page-id2.png)
 
 
+### Campaign/Adset/Ad
+Assign settings for the campaign/adset/ad. Provide names using the ```campaign_name```/```adset_name```/```ad_name``` variables.
+Active status is specified using the ```campaign_status```/```adset_status```/```ad_status``` variables. The default in ```ad_brand_awareness.py``` is for everything to be paused initially to prevent charges being incurred. 
+
+
 
 Run the python file to automatically create an Ad
 
