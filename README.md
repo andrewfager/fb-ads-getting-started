@@ -33,10 +33,6 @@ access_token    = '<ACCESS_TOKEN>'
 ad_account_id   = '<AD_ACCOUNT_ID>'
 page_id         = '<PAGE_ID>'
 
-img_filename    = '/path/to/local/image.jpg'
-link_url        = 'http://www.mylink.com'
-link_message    = 'try it out'
-
 campaign_name   = 'My Campaign2'
 campaign_status = 'ACTIVE'
 campaign_status = 'PAUSED'
@@ -48,6 +44,10 @@ adset_status    = 'PAUSED'
 ad_name         = 'My Ad'
 ad_status       = 'ACTIVE'
 ad_status       = 'PAUSED'
+
+img_filename    = '/path/to/local/image.jpg'
+link_url        = 'http://www.mylink.com'
+link_message    = 'try it out'
 ```
 
 ### Access Token
@@ -86,17 +86,27 @@ You will need to reference your FB page to create this ad. You can find your pag
 ![ScreenShot](images/fb-page-id2.png)
 
 
-### Campaign/Adset/Ad
+### Campaign/Adset/Ad Settings
 Assign settings for the campaign/adset/ad. Provide names using the ```campaign_name```/```adset_name```/```ad_name``` variables.
+
 Active status is specified using the ```campaign_status```/```adset_status```/```ad_status``` variables. The default in ```ad_brand_awareness.py``` is for everything to be paused initially to prevent charges being incurred. 
 
+```img_filename``` is a local image file to be uploaded in the API call. 
 
+```link_url``` is a link to your brand's website that the ad is trying to bring awareness to.
 
-Run the python file to automatically create an Ad
+```link_message``` is the text seen when the ad is served.
+
+## Create Ad
+
+Run and brand awareness ad:
 
 ```
 python ad_brand_awareness.py
 ```
+
+Verify ad created successfully at https://www.facebook.com/ads/manager/
+
 
 ## Resources
 <a href="github.com/facebook/facebook-python-ads-sdk">github.com/facebook/facebook-python-ads-sdk</a>
