@@ -25,33 +25,11 @@ settings > advanced
 
 ![ScreenShot](images/fb-api-access.png)
 
-### Add Advert account to the App
-
-The app and advert account need to linked. Enter Advert account number under app's advanced settings.
-![ScreenShot](images/fb-ad-id.png)
-
-### Access Token
-Create user access token to the App. One way to do this is in the graph API explorer.
-https://developers.facebook.com/tools/explorer
-
-Select correct app
-
-![ScreenShot](images/fb-access-token-1.png)
-
-Select 'create user access token'
-
-![ScreenShot](images/fb-access-token-3.png)
-
-Make sure permisions are enabled for: 
-ads_management, ads_read, read_insights
-
-![ScreenShot](images/fb-access-token-4.png)
-
 
 ## Create Ad
 Use sample code to create a brand awareness ad. First fill our 'User Input' section at begining of ``ad_awareness.py``
-```
 
+```
 ### User Input ###
 
 access_token    = '<ACCESS_TOKEN>'
@@ -74,6 +52,35 @@ ad_name         = 'My Ad'
 ad_status       = 'ACTIVE'
 ad_status       = 'PAUSED'
 ```
+
+### Access Token
+You'll need to create user access token for input the ```access_token``` variable.  One way to do this is in the graph API explorer.
+https://developers.facebook.com/tools/explorer
+
+Select correct app
+
+![ScreenShot](images/fb-access-token-1.png)
+
+Select 'create user access token'
+
+![ScreenShot](images/fb-access-token-3.png)
+
+Make sure permisions are enabled for: 
+ads_management, ads_read, read_insights
+
+![ScreenShot](images/fb-access-token-4.png)
+
+Once an access token has been create copy and paste to the ```access_token``` variable.  
+
+### Ad Account ID
+
+Obtain the Ad Account ID from....
+
+You will also need to link the ad account to your app. Enter Ad account number under app's advanced settings.
+![ScreenShot](images/fb-ad-id.png)
+
+
+
 
 Run the python file to automatically create an Ad
 
