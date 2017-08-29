@@ -73,18 +73,14 @@ You will need to input your FB page ID  (again, as a string). You can find your 
 ### Campaign/Adset/Ad Settings
 These are settings such as naming, targeting, budget, etc. For this example you can keep the defaults. 
 
-Active status is specified using the ```campaign_status```/```adset_status```/```ad_status``` variables. To prevent any charges from being incurred the Campaign/Adset & Ad are all paused when initially created. 
+Active status is specified using the ```campaign_status```/```adset_status```/```ad_status``` variables. To prevent any charges from being incurred the Campaign, Adset & Ad are all paused when initially created. 
 
 
 These Ad Settings are required input:
 
-``img_filename    = '/path/to/image.jpg'``
+``img_filename    = '/path/to/image.jpg'`` - path and file to a local image to be uploaded by the API.
 
-path and file to a local image to be uploaded by the API.
-
-``link_url        = 'http://www.mylink.com'``
-
-link to your brand's website.
+``link_url        = 'http://www.mylink.com'`` - link to your brand's website.
 
 
 ### Link App & Ad Account
