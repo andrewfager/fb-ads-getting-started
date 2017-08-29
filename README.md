@@ -19,7 +19,7 @@ You will need a Facebook App. Create a new app at https://developers.facebook.co
 API access to the app needs to be enabled. This can be done under the App's advanced settings
 
 <img src="images/fb-api-access.png" width="650">
-![ScreenShot](images/fb-api-access.png)
+
 
 ### Ad Account
 
@@ -34,69 +34,72 @@ The ad needs to reference a Facebook page. If you do not have a page you can cre
 Before running ``ad_awareness.py`` fill out the ``### User Input ###`` section at the top of the code  
 
 ### Access Token
-``access_token    = '<ACCESS_TOKEN>'``
 
-Enter access token (as a string). To create one you can use the graph API explorer.
+Enter access token (as a string). 
+```
+access_token    = '<ACCESS_TOKEN>'
+```
+
+To create one you can use the graph API explorer.
 https://developers.facebook.com/tools/explorer. Select app
 
-![ScreenShot](images/fb-access-token-1.png)
+<img src="images/fb-access-token-1.png" width="650">
 
 Select 'get user access token'
 
 <img src="images/fb-access-token-3.png" width="650">
-![ScreenShot](images/fb-access-token-3.png)
 
 Make sure permisions are enabled for: 
 ``ads_management``, ``ads_read``, ``read_insights``
 
 <img src="images/fb-access-token-4.png" width="650">
-![ScreenShot](images/fb-access-token-4.png)
 
 copy and paste into ```access_token``` variable.  
 
 ### Ad Account ID
-``ad_account_id   = '<AD_ACCOUNT_ID>'``
 
-Enter ad account ID (as a string). You can obtain your Ad Account ID from the Ads manager (https://www.facebook.com/ads/manager/).
+Enter ad account ID (as a string). 
+```
+ad_account_id   = '<AD_ACCOUNT_ID>'
+```
 
-<img src="images/fb-ad-id3.png" width="650">
-![ScreenShot](images/fb-ad-id3.png)
+You can obtain your Ad Account ID from the Ads manager (https://www.facebook.com/ads/manager/).
 
+<img src="images/fb-ad-id3.png" width="400">
 
 
 ### Page ID
-``page_id         = '<PAGE_ID>'``
 
-You will need to input your FB page ID  (again, as a string). You can find your page ID by going to the page's 'About' section. 
+You will need to input your FB page ID  (again, as a string).
+```
+page_id         = '<PAGE_ID>'
+```
+
+You can find your page ID by going to the page's 'About' section. 
 
 <img src="images/fb-page-id2.png" width="650">
-![ScreenShot](images/fb-page-id2.png)
-
-
 
 
 ### Campaign/Adset/Ad Settings
-These are settings such as naming, targeting, budget, etc. For this example you can keep the defaults. 
+These are settings such as naming, targeting, budget, etc. For this example you can keep the defaults and succesfully create an Ad. 
 
 Active status is specified using the ```campaign_status```/```adset_status```/```ad_status``` variables. To prevent any charges from being incurred the Campaign, Adset & Ad are all paused when initially created. 
 
 
 These Ad Settings are required input:
-
-``img_filename    = '/path/to/image.jpg'`` - path and file to a local image to be uploaded by the API.
-
-``link_url        = 'http://www.mylink.com'`` - link to your brand's website.
-
+```
+img_filename    = '/path/to/image.jpg'    #local image path to be uploaded by the API.
+link_url        = 'http://www.mylink.com' #link to your brand's website.
+```
 
 ### Link App & Ad Account
 One last step, you will also need to link your app and ad account. At https://developers.facebook.com enter Ad account ID under app's advanced settings.
 
 <img src="images/fb-ad-id2.png" width="650">
-![ScreenShot](images/fb-ad-id2.png)
 
 ## Create Ad
 
-use python code automatically create ad
+Now it's time to automatically create an ad using the API
 ```
 python ad_brand_awareness.py
 ```
