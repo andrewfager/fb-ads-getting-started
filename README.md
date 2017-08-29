@@ -16,8 +16,7 @@ You will need a Facebook App. Create a new app at https://developers.facebook.co
 
 ![ScreenShot](images/fb-create-app2.png)
 
-API access to the app needs to be enabled. This can be done under the App's advanced settings:
-settings > advanced
+API access to the app needs to be enabled. This can be done under the App's advanced settings
 
 ![ScreenShot](images/fb-api-access.png)
 
@@ -41,7 +40,7 @@ https://developers.facebook.com/tools/explorer. Select app
 
 ![ScreenShot](images/fb-access-token-1.png)
 
-Select 'create user access token'
+Select 'get user access token'
 
 ![ScreenShot](images/fb-access-token-3.png)
 
