@@ -14,7 +14,9 @@ See <a href="github.com/facebook/facebook-python-ads-sdk">github.com/facebook/fa
 ### App
 You will need a Facebook App. Create a new app at https://developers.facebook.com
 
-![ScreenShot](images/fb-create-app2.pngs=100)
+<img src="images/fb-create-app2.png" width="100">
+
+![ScreenShot](images/fb-create-app2.png)
 
 API access to the app needs to be enabled. This can be done under the App's advanced settings
 
