@@ -14,10 +14,11 @@ See <a href="github.com/facebook/facebook-python-ads-sdk">github.com/facebook/fa
 ### App
 You will need a Facebook App. Create a new app at https://developers.facebook.com
 
-<img src="images/fb-create-app2.png" width="600">
+<img src="images/fb-create-app2.png" width="650">
 
 API access to the app needs to be enabled. This can be done under the App's advanced settings
 
+<img src="images/fb-api-access.png" width="650">
 ![ScreenShot](images/fb-api-access.png)
 
 ### Ad Account
@@ -42,11 +43,13 @@ https://developers.facebook.com/tools/explorer. Select app
 
 Select 'get user access token'
 
+<img src="images/fb-access-token-3.png" width="650">
 ![ScreenShot](images/fb-access-token-3.png)
 
 Make sure permisions are enabled for: 
 ``ads_management``, ``ads_read``, ``read_insights``
 
+<img src="images/fb-access-token-4.png" width="650">
 ![ScreenShot](images/fb-access-token-4.png)
 
 copy and paste into ```access_token``` variable.  
@@ -56,6 +59,7 @@ copy and paste into ```access_token``` variable.
 
 Enter ad account ID (as a string). You can obtain your Ad Account ID from the Ads manager (https://www.facebook.com/ads/manager/).
 
+<img src="images/fb-ad-id3.png" width="650">
 ![ScreenShot](images/fb-ad-id3.png)
 
 
@@ -65,6 +69,7 @@ Enter ad account ID (as a string). You can obtain your Ad Account ID from the Ad
 
 You will need to input your FB page ID  (again, as a string). You can find your page ID by going to the page's 'About' section. 
 
+<img src="images/fb-page-id2.png" width="650">
 ![ScreenShot](images/fb-page-id2.png)
 
 
@@ -85,6 +90,8 @@ These Ad Settings are required input:
 
 ### Link App & Ad Account
 One last step, you will also need to link your app and ad account. At https://developers.facebook.com enter Ad account ID under app's advanced settings.
+
+<img src="images/fb-ad-id2.png" width="650">
 ![ScreenShot](images/fb-ad-id2.png)
 
 ## Create Ad
