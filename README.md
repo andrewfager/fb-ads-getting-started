@@ -1,5 +1,5 @@
 # A Getting Started Guide to the Facebook Marketing API 
-A step-by-step guide to automatically creating Ads in Python with the Facebook Marketing API. In this guide a 'Brand Awareness' Ad with ``ad_brand_awareness.py``
+A step-by-step guide to automatically creating Ads in Python with the Facebook Marketing API. In this guide we walk you through the steps required to create a 'Brand Awareness' Ad with ``ad_brand_awareness.py``
 
 ## Install Marketing API for Python
 Install with pip
