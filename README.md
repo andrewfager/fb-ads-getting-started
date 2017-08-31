@@ -2,7 +2,7 @@
 A step-by-step guide to automatically creating Ads in Python with the Facebook Marketing API. This guide provides a sample python code (``ad_brand_awareness.py``) that creates a 'Brand Awareness' Ad.
 
 ## Install API
-Install Marketing API for Python with pip
+Install Marketing API for Python with ``pip``, if there are permission issues you may need to use ``sudo``
 ```
 pip install facebookads
 ```
@@ -124,3 +124,5 @@ Verify ad created successfully by checking that it appears in the list of campai
 <a href="https://github.com/facebook/facebook-python-ads-sdk/">github.com/facebook/facebook-python-ads-sdk</a>
 
 www.facebookmarketingdevelopers.com
+
+developers.facebook.com/docs/marketing-apis
