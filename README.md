@@ -94,11 +94,33 @@ Now it's time to automatically create an ad using the API
 ```
 python ad_brand_awareness.py
 ```
+Example output:
+```
+Creating Campaign:  My Campaign4
+Creating Ad Set:  My Adset
+Creating Ad:  My Ad
 
-Verify ad created successfully by checking that it appears in the Ads Manager (https://www.facebook.com/ads/manager/)
+Current Campaigns:
+<Campaign> {
+    "created_time": "2017-08-31T07:17:17+0200",
+    "effective_status": "PAUSED",
+    "id": "6103773787451",
+    "name": "My Campaign4",
+    "objective": "BRAND_AWARENESS",
+    "status": "PAUSED"
+}
+<Campaign> {
+    "created_time": "2017-08-31T07:06:50+0200",
+    "effective_status": "PAUSED",
+    "id": "6103773531251",
+    "name": "My Campaign3",
+    "objective": "BRAND_AWARENESS",
+    "status": "PAUSED"
+```
+Verify ad created successfully by checking that it appears in the list of campaigns or the Ads Manager (https://www.facebook.com/ads/manager/).
 
 
 ## Resources
-<a href="github.com/facebook/facebook-python-ads-sdk">github.com/facebook/facebook-python-ads-sdk</a>
+<a href="https://github.com/facebook/facebook-python-ads-sdk/">github.com/facebook/facebook-python-ads-sdk</a>
 
 www.facebookmarketingdevelopers.com
