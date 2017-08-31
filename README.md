@@ -16,10 +16,6 @@ You will need a Facebook App. Create a new app at https://developers.facebook.co
 
 <img src="images/fb-create-app2.png" width="650">
 
-API access to the app needs to be enabled. This can be done under the App's advanced settings
-
-<img src="images/fb-api-access.png" width="650">
-
 
 ### Ad Account
 
@@ -91,11 +87,6 @@ These Ad Settings are required input:
 img_filename    = '/path/to/image.jpg'    #local image path to be uploaded by the API.
 link_url        = 'http://www.mylink.com' #link to your brand's website.
 ```
-
-### Link App & Ad Account
-One last step, you will also need to link your app and ad account. At https://developers.facebook.com enter Ad account ID under app's advanced settings.
-
-<img src="images/fb-ad-id2.png" width="650">
 
 ## Create Ad
 
