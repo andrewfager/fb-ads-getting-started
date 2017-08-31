@@ -125,4 +125,4 @@ Verify ad created successfully by checking that it appears in the list of campai
 
 www.facebookmarketingdevelopers.com
 
-developers.facebook.com/docs/marketing-apis
+<a href="https://developers.facebook.com/docs/marketing-apis">developers.facebook.com/docs/marketing-apis</a>
