@@ -34,26 +34,6 @@ img_filename 	= '/path/to/image.jpg'    #local image path to be uploaded by the 
 link_url        = 'http://www.mylink.com' #link to your brand's website.
 link_message 	= 'try it out'
 
-# rm before upload
-access_token    = 'EAAX6ZA1VtWiIBAPpp6JJrw0iFRNwdPKh5OBSpYeZBhp8m9PEznICIWY44x4lND4PVRQtbUmqWRn6wzxZBGEeHqMLwpysxLk7iho3CzjtL4K9FmWb5ADnKMu7NGHzb69Vg6IpR7vypXBcZAgQbPEiFSGKY5QE4uEZD' # long lived user access token for andrewfager app 2 months from 7/27
-ad_account_id   = '10152750485066251'
-page_id         = '1897834227096194'
-
-campaign_name   = 'My Campaign4'
-campaign_status = 'ACTIVE'
-campaign_status = 'PAUSED'
-
-adset_name      = 'My Adset'
-adset_status    = 'ACTIVE'
-adset_status    = 'PAUSED'
-
-ad_name         = 'My Ad'
-ad_status       = 'ACTIVE'
-ad_status       = 'PAUSED'
-
-img_filename = '/Users/carolefager/Desktop/rock1.jpg'
-link_url = 'http://www.exa.com/digitalrock'
-
 ####### Setup ############
 
 FacebookAdsApi.init(access_token=access_token)
