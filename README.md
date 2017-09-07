@@ -1,7 +1,7 @@
 # How to Create a Brand Awareness Ad with the Facebook Marketing API
 
 ## Introduction
-In this repository ``ad_brand_awareness.py`` creates a Facebook Brand Awareness ad. What follows are the steps I used to setup and use the Marketing API to create the ad. I hope someone finds this helpful for getting starting automatically creating and managing Facebook ads.
+In this repository I create creates a Facebook brand awareness ad using Python. What follows are the steps I followed to setup and use the Marketing API to do this. I hope someone finds this helpful for getting starting automatically creating and managing Facebook ads.
 
 ## Setup
 
