@@ -6,11 +6,11 @@ In this repository I create a Facebook brand awareness ad using Python. What fol
 ## Setup
 
 #### Install API
-Install Marketing API for Python with ``pip``, if there are permission issues you may need to use ``sudo``
+Install Marketing API for Python with ``pip``: 
 ```
 pip install facebookads
 ```
-See <a href="https://github.com/facebook/facebook-python-ads-sdk">github.com/facebook/facebook-python-ads-sdk</a> for more information on the installation process.
+If there are permission issues you may need to use ``sudo``. See <a href="https://github.com/facebook/facebook-python-ads-sdk">github.com/facebook/facebook-python-ads-sdk</a> for more information on the installation process.
 
 #### App
 You will need a Facebook App. Create a new app at https://developers.facebook.com
@@ -37,8 +37,10 @@ For the API to access your app you will need to enter an access token (as a stri
 access_token    = '<ACCESS_TOKEN>'
 ```
 
-When you're getting started it's simplet to use the graph API explorer to create one.
-https://developers.facebook.com/tools/explorer. To do so select app
+When you're getting started it's simplest to use the graph API explorer to create one.
+To do so go to https://developers.facebook.com/tools/explorer. 
+
+Select app
 
 <img src="images/fb-access-token-1.png" width="650">
 
