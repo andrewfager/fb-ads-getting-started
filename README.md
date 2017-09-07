@@ -122,7 +122,7 @@ Current Campaigns:
 ```
 To verify that the ad was created successfully check that it appears in the list of campaigns outputed when running ``ad_brand_awareness.py`` or check the Ads Manager (https://www.facebook.com/ads/manager/).
 
-In this example you can see that the campaign labeled ``My Campaign`` was successfully created as it is found in the list current campaigns. In a similar way we could list all the Ad Sets and Ad associated with our new campaign.
+In this example you can see that the campaign labeled ``My Campaign`` was successfully created as it is found in the list current campaigns. In a similar way we could list all the Ad Sets and Ads associated with our new campaign.
 
 That's it! I hope this is helpful and can be used as a starting point for working with Facebook's Marketing API in Python. 
 
